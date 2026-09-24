@@ -1,12 +1,12 @@
 import { PublicNavbar } from '@/components/public/PublicNavbar';
-import { HomeHero } from '@/components/public/HomeHero';
+import { DiscoveryFeed } from '@/components/public/DiscoveryFeed';
 import { PublicFooter } from '@/components/public/PublicFooter';
 
-export default function Home() {
+export default function FeedPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#F7F6F3]">
       <PublicNavbar />
-      <HomeHero />
+      <DiscoveryFeed />
       <PublicFooter />
     </main>
   );

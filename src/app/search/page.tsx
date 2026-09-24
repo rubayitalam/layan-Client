@@ -1,12 +1,12 @@
 import { PublicNavbar } from '@/components/public/PublicNavbar';
-import { HomeHero } from '@/components/public/HomeHero';
+import { SearchGrid } from '@/components/public/SearchGrid';
 import { PublicFooter } from '@/components/public/PublicFooter';
 
-export default function Home() {
+export default function SearchPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#F7F6F3]">
       <PublicNavbar />
-      <HomeHero />
+      <SearchGrid />
       <PublicFooter />
     </main>
   );

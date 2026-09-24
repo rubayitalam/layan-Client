@@ -1,12 +1,13 @@
 import { PublicNavbar } from '@/components/public/PublicNavbar';
-import { HomeHero } from '@/components/public/HomeHero';
+import { SalonProfile } from '@/components/public/SalonProfile';
 import { PublicFooter } from '@/components/public/PublicFooter';
 
-export default function Home() {
+export default async function SalonPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
   return (
     <main className="min-h-screen bg-white">
       <PublicNavbar />
-      <HomeHero />
+      <SalonProfile slug={resolvedParams.slug} />
       <PublicFooter />
     </main>
   );
