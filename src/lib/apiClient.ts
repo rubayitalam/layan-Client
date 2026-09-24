@@ -1,6 +1,7 @@
 import { ApiResponse } from '@/types/api';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
+const RAW_API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://layan-server.vercel.app/api';
+const API_BASE_URL = RAW_API_URL.replace(/\/+$/, '');
 
 export class ApiClient {
   private static getHeaders(): HeadersInit {
